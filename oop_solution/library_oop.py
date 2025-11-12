@@ -118,18 +118,3 @@ class Library:
                 book = self.find_book(book_id)
                 if book:
                     print(f"- {book.title} by {book.author}")
-
-
-if __name__ == "__main__":
-    lib = Library()
-    lib.add_book(1, "Python Crash Course", "Eric Matthes", 3)
-    lib.add_book(2, "Clean Code", "Robert Martin", 2)
-    lib.add_member(101, "Alice Smith", "alice@email.com")
-    lib.display_available_books()
-    lib.borrow_book(101, 1)
-    lib.display_member_books(101)
-    lib.return_book(101, 1)
-
-    print("\n" + "=" * 60)
-    print("TEST COMPLETE")
-    print("=" * 60)
